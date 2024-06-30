@@ -10,23 +10,22 @@
   src: url("../fonts/Acorn-Light.woff");
 }
 
+//! ████████████████████████████████████  RESET
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bold";
-
+  font-family: "Light";
+  background-color: red;
 }
-
-//! ████████████████████████████████████  RESET
 
 body {}
 
-//_ ████████████████████████████████████  MAIN SCSS
+//_ ████████████████████████████████████  PREVIOUS SCSS
 
 .box {
 
-  color: white;
   font-size: 4em;
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
@@ -71,38 +70,45 @@ body {}
 
 .box10 {
   background: #16a085;
+
+  //_ ████████████████████████████████████  THIS SCSS
 }
 
-.container {
+a {
+  color: white;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all .5s;
+
+}
+
+a:hover {
+
+  background: rgba(0, 0, 0, 0.3)
+}
+
+.wrapper {
+
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 5rem;
+
+}
+
+.flex-nav-container ul {
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  // justify-content: center;
-  // align-items: flex-start;
-  // height: 100vh;
-  // border: 10px solid goldenrod;
-  // min-height: 100vh;
-  // flex-direction: row;
-  // flex-wrap: wrap;
 
 }
 
-.box {
-flex-basis: 40rem;
-  // flex: 1;
-  // width: 300px;
+@media all and (max-width: 1000px) {}
 
-}
-
-.box1 {
-
-}
-
-.box2 {
-
-
-}
-
-.fa-solid {
-
-color: red;
-
-}
+@media all and (max-width: 500px) {}
